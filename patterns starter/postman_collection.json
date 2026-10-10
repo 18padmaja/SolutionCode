@@ -1,0 +1,127 @@
+{
+  "info": {
+    "_postman_id": "e5e3e3e3-e3e3-e3e3-e3e3-e3e3e3e3e3e3",
+    "name": "Disease Stats API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "DiseaseSh Strategy",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/v1/disease/disease-sh-io/count",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "v1",
+            "disease",
+            "disease-sh-io",
+            "count"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "John Hopkins Strategy",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/v1/disease/john-hopkins/count",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "v1",
+            "disease",
+            "john-hopkins",
+            "count"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Infected Ratio Calculation",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/v1/disease/infected-ratio?sourceType=DiseaseSh",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "v1",
+            "disease",
+            "infected-ratio"
+          ],
+          "query": [
+            {
+              "key": "sourceType",
+              "value": "DiseaseSh"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "value",
+        "value": "Bearer upgrad",
+        "type": "string"
+      },
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "username",
+      "value": "India",
+      "type": "string"
+    },
+    {
+      "key": "password",
+      "value": "India",
+      "type": "string"
+    }
+  ]
+}
